@@ -1,0 +1,19 @@
+tput setaf 162; echo vscodownloader macOS (V1.0 by elmablo); tput sgr 0
+echo
+
+set -o errexit
+
+VERZEICHNIS='/Library/Packages/Vsco'
+sudo mkdir -p $VERZEICHNIS
+cd $VERZEICHNIS
+tput setaf 2; echo "Verzeichnis=$VERZEICHNIS"; tput sgr 0
+echo
+
+tput setaf 162; echo "Vsco Username eintragen: "; tput sgr 0
+read
+
+sudo mkdir -p $VERZEICHNIS/$REPLY
+cd $VERZEICHNIS/$REPLY
+
+echo
+tput setaf 2; sudo wget -nc $(curl --url https://vsco.co/$REPLY/gallery |tr '"' '\n' |grep -i .jpg |grep -v http); tput sgr 0
