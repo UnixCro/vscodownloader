@@ -3,7 +3,7 @@ echo
 
 set -o errexit
 
-VERZEICHNIS='/Library/Packages/Vsco'
+VERZEICHNIS='$PWD'
 sudo mkdir -p $VERZEICHNIS
 cd $VERZEICHNIS
 tput setaf 2; echo "Verzeichnis=$VERZEICHNIS"; tput sgr 0
