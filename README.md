@@ -12,3 +12,7 @@ Wenn nicht, installiere diese Werkzeuge & verschiebe Sie nach "/usr/local/bin/"
 # Ausführung
 
 Nachdem du es überprüft hast, lade dir die .zip Datei herunter und gib ins Terminal ein: `bash` Leerzeichen & dann die vscodownloader Datei hereinziehen.
+
+# Veränderung
+
+Wenn du möchtest, kannst du die Dateien, die heruntergeladen werden, in einem bestimmten Ordner verschieben. Veränder dann in der vscomablo Datei den Abschnitt `VERZEICHNIS='$PWD' anders um, z.B statt $PWD eben, /Users/Shared. Eben dein Pfad.
