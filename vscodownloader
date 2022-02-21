@@ -16,4 +16,4 @@ sudo mkdir -p $VERZEICHNIS/$REPLY
 cd $VERZEICHNIS/$REPLY
 
 echo
-tput setaf 2; sudo wget -nc $(curl --url https://vsco.co/$REPLY/gallery |tr '"' '\n' |grep -i .jpg |grep -v http); tput sgr 0
+tput setaf 2; sudo wget --no-clobber $(curl --url https://vsco.co/$REPLY/gallery |tr '"' '\n' |grep -i .jpg |grep -v http); tput sgr 0
